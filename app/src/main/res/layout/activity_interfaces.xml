@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfaces"
+    android:background="@color/colorPrimary">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/SearchFilter"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Games"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/button2"
+        android:onClick="showGames"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Players"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/button4"
+        android:onClick="showPlayers"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teams"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/button3"
+        android:onClick="showTeams"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_alignEnd="@id/toolbar"
+        android:layout_alignRight="@id/toolbar"
+        android:onClick="showStats"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        />
+
+
+    <ListView
+        android:id="@+id/firstPage"
+        android:layout_width="wrap_content"
+        android:layout_height="700dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:backgroundTint="@color/colorAccent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+</RelativeLayout>
